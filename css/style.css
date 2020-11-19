@@ -1,0 +1,749 @@
+body {
+    width:100%;
+    height:100%;
+    font-family: 'Inter', sans-serif;
+    margin:0;
+}
+
+/*---dark mode styles------*/
+
+.dark {
+    background-color:hsl(230, 17%, 14%);
+}
+
+.darkBlue {
+    background-color:hsl(232, 19%, 15%);
+}
+
+.darkDesatBlue {
+    background-color:hsl(228, 28%, 20%);
+}
+
+.desatBlue {
+    color:hsl(228, 34%, 66%);
+    color:#939fcd;
+}
+
+.white {
+    color:hsl(0, 0%, 100%);
+}
+
+.sliderBG {
+    background: linear-gradient(90deg, rgba(55,143,230,1) 0%, rgba(62,218,130,1) 100%);
+}
+
+.blue {
+    color:#1da1f2;
+}
+
+
+/*---regular mode styles---*/
+
+
+.wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    /* min-height: 100vh; */
+}
+
+/* toggle button */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 5px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: hsl(230, 22%, 74%);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px  hsl(230, 22%, 74%);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(31px);
+    transform: translateX(31px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+/*toggle button end */
+
+header {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    position: absolute;
+    top:0;
+    z-index: -1;
+    padding: 30px 0 60px 0;
+}
+
+header .text {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+header .text h1 {
+    font-size: 26px;
+    text-align: left;
+}
+
+h4 {
+    font-size: 18px;
+    text-align: left;
+    margin:0 0 30px 0;
+    color:hsl(228, 12%, 44%);
+}
+
+.mode {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin:0 auto;
+}
+
+h2 {
+    color:hsl(228, 12%, 44%);
+    font-size: 19px;
+}
+.divider {
+    border:hsl(230, 22%, 74%) 1px solid;
+    width:100%;
+}
+
+.followers-wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+
+    position: absolute;
+    top:222px;
+}
+
+.secondbox {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding-bottom: 30px;
+}
+
+#facebook-info {
+    width:90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius:5px;
+    border-top:6px hsl(208, 92%, 53%) solid;
+}
+
+#twitter-info {
+    width:90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius:5px;
+    border-top:6px hsl(203, 89%, 53%) solid;
+}
+
+#instagram-info {
+    width:90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius:5px;
+}
+
+#inst-border {
+    width:100%;
+    height:6px;
+    background:linear-gradient(to right, hsl(37, 97%, 70%),  hsl(329, 70%, 58% ));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#youtube-info {
+    width:90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius:5px;
+    border-top:6px hsl(348, 97%, 39%) solid;
+}
+
+#ytube-p {
+    color:hsl(348, 97%, 39%);
+}
+
+.box-wrap {
+    margin-bottom: 30px;
+    /* padding-bottom: 30px; */
+}
+.box-wrap h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-top:20px;
+    margin-bottom: 0;
+}
+
+.uppercase {
+    margin-top:0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color:hsl(229, 14%, 55%);
+}
+
+.name {
+    margin-bottom: 0;
+    font-weight: 700;
+    color:hsl(228, 12%, 44%);
+    text-transform: none;
+    margin-top:0;
+}
+
+.socmed-wrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.socmed-wrapper img {
+    padding:10px;
+}
+
+.counter-wrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-wrapper p {
+    margin:0;
+    font-weight: 700;
+    color:#1eb589;
+    padding:10px;
+}
+
+.counter-wrapper img {
+    width:20px;
+}
+
+/*----overview section----*/
+
+.overview-wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    position: absolute;
+    top:1400px;
+    padding-bottom: 55px; /*ADDED THIS SIZE PADDING SO THAT THE FOOTER CAN FIT INTO IT WITH THE POSITION STATEMENT*/
+}
+
+.overview-wrapper .text-wrap {
+    width:90%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h3 {
+    color: hsl(228, 12%, 44%);
+    font-size: 24px;
+}
+
+.likes-wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+}
+
+.likes-half-wrapper {
+    width:100%;
+}
+
+.stats-wrap {
+    width:80%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+
+/*----fb-views stat box----*/
+
+.innerwrap {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding-top:20px;
+}
+#fb-views {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius:10px;
+    /* padding-top: 20px; */
+    /* margin-top:30px; */
+}
+
+#fb-views p {
+    color: rgb(99, 104, 126);
+    font-weight: 700;
+}
+
+.stats-wrap h4 {
+    font-size: 40px;
+    margin:30px 0;
+}
+
+.percent-wrap {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-wrap img {
+    width:30px;
+}
+.percent-wrap img {
+    width:15px;
+}
+
+#fb-views .percent-wrap p {
+    color:#1eb589;
+    padding-left:5px;
+}
+
+/*----fb-likes stat box----*/
+
+
+#fb-likes {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius:10px;
+    /* padding-top: 20px; */
+    margin-top:30px;
+}
+
+#fb-likes p {
+    color: rgb(99, 104, 126);
+    font-weight: 700;
+}
+
+#fb-likes .percent-wrap .red {
+    color: hsl(348, 97%, 39%);
+    padding-left:5px;
+}
+
+/*----inst-likes stat box----*/
+
+
+#inst-likes {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius:10px;
+    /* padding-top: 20px; */
+    margin-top:30px;
+}
+
+#inst-likes p {
+    color: rgb(99, 104, 126);
+    font-weight: 700;
+}
+
+#inst-likes .percent-wrap p {
+    color:#1eb589;
+    padding-left:5px;
+}
+
+
+/*----inst-views stat box----*/
+
+#inst-views {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius:10px;
+    /* padding-top: 20px; */
+    margin-top:30px;
+}
+
+#inst-views p {
+    color: rgb(99, 104, 126);
+    font-weight: 700;
+}
+
+#inst-views .percent-wrap p {
+    color:#1eb589;
+    padding-left:5px;
+}
+
+/*----tw-retweets stat box----*/
+
+#tw-retweets {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius:10px;
+    /* padding-top: 20px; */
+    margin-top:30px;
+}
+
+#tw-retweets p {
+    color: rgb(99, 104, 126);
+    font-weight: 700;
+}
+
+#tw-retweets .percent-wrap p {
+    color:#1eb589;
+    padding-left:5px;
+}
+
+/*----tw-likes stat box----*/
+
+#tw-likes {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius:10px;
+    /* padding-top: 20px; */
+    margin-top:30px;
+}
+
+#tw-likes p {
+    color: rgb(99, 104, 126);
+    font-weight: 700;
+}
+
+#tw-likes .percent-wrap p {
+    color:#1eb589;
+    padding-left:5px;
+}
+
+/*----yt-likes stat box----*/
+
+
+#yt-likes {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius:10px;
+    /* padding-top: 20px; */
+    margin-top:30px;
+}
+
+#yt-likes p {
+    color: rgb(99, 104, 126);
+    font-weight: 700;
+}
+
+#yt-likes .percent-wrap .red {
+    color: hsl(348, 97%, 39%);
+    padding-left:5px;
+}
+
+/*----yt-views stat box----*/
+
+#yt-views {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius:10px;
+    /* padding-top: 20px; */
+    margin-top:30px;
+}
+
+#yt-views p {
+    color: rgb(99, 104, 126);
+    font-weight: 700;
+}
+
+#yt-views .percent-wrap .red {
+    color: hsl(348, 97%, 39%);
+    padding-left:5px;
+}
+
+/*----footer----*/
+
+footer {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom:0; /* SO THAT THE FOOTER STAYS AT THE BOTTOM AND ADDED PADDING OF THE SAME SIZE TO OVERIVEW SECTION THAT THE FOOTER IS IN*/
+    height:50px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+/*----TABLET STYLES----------------------------------------*/
+@media only screen and (min-width: 768px){
+
+.followers-wrapper {
+    width:60%;
+}
+
+
+.box-wrap {
+    margin-bottom: 60px;
+}
+
+.overview-wrapper {
+    top:1550px;
+}
+
+.likes-half-wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-flow: row wrap;  if we want to line boxes two by two*/
+}
+
+#fb-views {
+    width:60%;
+}
+#fb-likes {
+    width:60%;
+}
+#inst-likes {
+    width:60%;
+}
+#inst-views {
+    width:60%;
+}
+#tw-retweets {
+    width:60%;
+}
+#tw-likes {
+    width:60%;
+}
+#yt-likes {
+    width:60%;
+}
+#yt-views {
+    width:60%;
+}
+
+.views-wrap {
+    margin:30px;
+}
+
+}
+
+/*----DESKTOP STYLES----------------------------------------*/
+
+@media only screen and (min-width: 1440px) {
+
+.followers-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width:90%;
+}
+
+header {
+    padding-bottom: 160px;
+}
+
+#header-wrap {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:90%
+}
+
+header .text {
+    width:60%;
+}
+
+header .mode {
+    width:30%;
+}
+
+header .text h1 {
+    font-size: 30px;
+}
+
+.mode {
+    justify-content: flex-end;
+}
+
+h2 {
+    padding-right:20px;
+    margin:0;
+    font-size: 18px;
+}
+
+.divider {
+    display:none;
+}
+
+#facebook-info {
+    width:22%;
+}
+#twitter-info {
+    width:22%;
+}
+#instagram-info {
+    width:22%;
+}
+#youtube-info {
+    width:22%;
+}
+
+
+/*---overview section desktop ---*/
+
+.overview-wrapper {
+    top:550px;
+    padding-bottom: 150px;
+}
+
+.likes-wrapper {
+  width:90%;
+  flex-direction: column;
+}
+
+.likes-half-wrapper {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+}
+
+#fb-views {
+    width:22%;
+}
+#fb-likes {
+    width:22%;
+}
+#inst-likes {
+    width:22%;
+}
+#inst-views {
+    width:22%;
+}
+#tw-retweets {
+    width:22%;
+}
+#tw-likes {
+    width:22%;
+}
+#yt-likes {
+    width:22%;
+}
+#yt-views {
+    width:22%;
+}
+
+
+}
+

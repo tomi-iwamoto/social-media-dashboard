@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- font styles -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- font styles end -->
+
+
+</head>
+
+
+
+
+<body id="bodybackground">
+
+  <div class="wrapper">
+
+
+    <header>
+
+      <div id="header-wrap">
+      <div class="text">
+        <h1 id='title'>Social Media Dashboard</h1>
+        <h4 id="sub">Total Followers: 23,004</h4>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="mode">
+        <h2 id="mode">Dark Mode</h2>
+
+        <label class="switch" id="slider-switch"> 
+          <input type="checkbox" checked id="chk">
+          <span id="sliderRound" class="slider round" class="sliderBG"></span>
+        </label>
+
+      </div>
+    </div>
+
+
+    </header>
+
+
+
+    <div class="followers-wrapper"> <!-----followers section-->
+
+      <div class="box-wrap" id="facebook-info">
+        <div class="secondbox">
+        <div class="socmed-wrapper">
+          <img src="img/icon-facebook.svg" alt="faceboook icon">
+          <p id="tag" class="name">@nathanf</p>
+        </div>
+        <h1 class="followerNum">1987</h1>
+        <p class="uppercase">followers</p>
+        <div class="counter-wrapper">
+          <img src="img/icon-up.svg" alt="uparrow">
+          <p>12 Today</p>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="box-wrap" id="twitter-info">
+        <div class="secondbox">
+        <div class="socmed-wrapper">
+          <img src="img/icon-twitter.svg" alt="twitter icon">
+          <p class="name">@nathanf</p>
+        </div>
+        <h1  class="followerNum">1044</h1>
+        <p class="uppercase">followers</p>
+        <div class="counter-wrapper">
+          <img src="img/icon-up.svg" alt="uparrow">
+          <p>99 Today</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="box-wrap" id="instagram-info">
+        <div id="inst-border"></div>
+        <div class="secondbox">
+        <div class="socmed-wrapper">
+          <img src="img/icon-instagram.svg" alt="instagram icon">
+          <p class="name">@nathanf</p>
+        </div>
+        <h1 class="followerNum">11K</h1>
+        <p class="uppercase">followers</p>
+        <div class="counter-wrapper">
+          <img src="img/icon-up.svg" alt="uparrow">
+          <p>1099 Today</p>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="box-wrap" id="youtube-info">
+        <div class="secondbox">
+        <div class="socmed-wrapper">
+          <img src="img/icon-youtube.svg" alt="youtube icon">
+          <p class="name">@nathanf</p>
+        </div>
+        <h1 class="followerNum">8239</h1>
+        <p class="uppercase">followers</p>
+        <div class="counter-wrapper">
+          <img src="img/icon-down.svg" alt="downarrow">
+          <p id="ytube-p">144 Today</p>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="overview-wrapper"> <!-----overview section-->
+
+      <div class="text-wrap">
+      <h3 id="overviewTitle">Overiew - Today</h3>
+      </div>
+
+      <div class="likes-wrapper"> 
+
+
+        <div class="likes-half-wrapper"><!---likes half wrapper-->
+
+        <div class="views-wrap" id="fb-views">
+          <div class="innerwrap">
+          <div class="stats-wrap">
+          <p class="lightGray">Page Views</p>
+          <img src="img/icon-facebook.svg" alt="fb icon" />
+          </div>
+          <div class="stats-wrap">
+          <h4 class="statsNum">87</h4>
+          <div class="percent-wrap">
+            <img src="img/icon-up.svg" alt="up arrow"/>
+            <p>3%</p>
+          </div>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="views-wrap" id="fb-likes">
+          <div class="innerwrap">
+          <div class="stats-wrap">
+            <p class="lightGray">Likes</p>
+            <img src="img/icon-facebook.svg" alt="fb icon" />
+            </div>
+            <div class="stats-wrap">
+            <h4 class="statsNum">52</h4>
+            <div class="percent-wrap">
+              <img src="img/icon-down.svg" alt="down arrow"/>
+              <p class="red">2%</p>
+            </div>
+            </div>
+            </div>
+        </div>
+
+
+
+        <div class="views-wrap" id="inst-likes">
+          <div class="innerwrap">
+          <div class="stats-wrap">
+            <p class="lightGray">Likes</p>
+            <img src="img/icon-instagram.svg" alt="instagram icon" />
+            </div>
+            <div class="stats-wrap">
+            <h4 class="statsNum">5462</h4>
+            <div class="percent-wrap">
+              <img src="img/icon-up.svg" alt="up arrow"/>
+              <p>2257%</p>
+            </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="views-wrap" id="inst-views">
+          <div class="innerwrap">
+          <div class="stats-wrap">
+            <p class="lightGray">Profile Views</p>
+            <img src="img/icon-instagram.svg" alt="instagram icon" />
+            </div>
+            <div class="stats-wrap">
+            <h4 class="statsNum">52k</h4>
+            <div class="percent-wrap">
+              <img src="img/icon-up.svg" alt="up arrow"/>
+              <p>1375%</p>
+            </div>
+            </div>
+            </div>
+        </div>
+
+      </div><!----likes half wrap end-->
+
+      <div class="likes-half-wrapper"><!----likes half wrap2-->
+
+        <div class="views-wrap" id="tw-retweets">
+          <div class="innerwrap">
+          <div class="stats-wrap">
+            <p class="lightGray">Retweets</p>
+            <img src="img/icon-twitter.svg" alt="twitter icon" />
+            </div>
+            <div class="stats-wrap">
+            <h4 class="statsNum">117</h4>
+            <div class="percent-wrap">
+              <img src="img/icon-up.svg" alt="up arrow"/>
+              <p>303%</p>
+            </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="views-wrap" id="tw-likes">
+          <div class="innerwrap">
+          <div class="stats-wrap">
+            <p class="lightGray">Likes</p>
+            <img src="img/icon-twitter.svg" alt="twitter icon" />
+            </div>
+            <div class="stats-wrap">
+            <h4 class="statsNum">507</h4>
+            <div class="percent-wrap">
+              <img src="img/icon-up.svg" alt="up arrow"/>
+              <p>553%</p>
+            </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="views-wrap" id="yt-likes">
+          <div class="innerwrap">
+          <div class="stats-wrap">
+            <p class="lightGray">Likes</p>
+            <img src="img/icon-youtube.svg" alt="youtube icon" />
+            </div>
+            <div class="stats-wrap">
+            <h4 class="statsNum">107</h4>
+            <div class="percent-wrap">
+              <img src="img/icon-down.svg" alt="down arrow"/>
+              <p class="red">19%</p>
+            </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="views-wrap" id="yt-views">
+          <div class="innerwrap">
+          <div class="stats-wrap">
+            <p class="lightGray">Total Views</p>
+            <img src="img/icon-youtube.svg" alt="youtube icon" />
+            </div>
+            <div class="stats-wrap">
+            <h4 class="statsNum">1407</h4>
+            <div class="percent-wrap">
+              <img src="img/icon-down.svg" alt="down arrow"/>
+              <p class="red">12%</p>
+            </div>
+            </div>
+          </div>
+        </div>
+
+      </div>   <!----likes half wrap2 end-->
+
+      </div>
+
+      <footer>
+
+        <div class="attribution">
+          <p id="attr">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="https://tomii.design/" target="_blank">Tomomi Iwamoto</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+  
+
+  </div> <!---wrapper-->
+
+<!----------JAVASCRIPT-------------------------------->
+<script src="js/main.js"></script>
+
+<script>
+const chk = document.getElementById('chk');
+
+let body = document.querySelector('body');
+let header = document.querySelector('header');
+let headerh1 = document.getElementById('title');
+let subtitle = document.getElementById('sub');
+let mode = document.getElementById('mode');
+let ovtitle = document.getElementById('overviewTitle');
+
+let boxwrap = document.getElementsByClassName('secondbox')[0];
+let boxwrap2 = document.getElementsByClassName('secondbox')[1];
+let boxwrap3 = document.getElementsByClassName('secondbox')[2];
+let boxwrap4 = document.getElementsByClassName('secondbox')[3];
+
+let innerwrap = document.getElementsByClassName('innerwrap')[0];
+let innerwrap2 = document.getElementsByClassName('innerwrap')[1];
+let innerwrap3 = document.getElementsByClassName('innerwrap')[2];
+let innerwrap4 = document.getElementsByClassName('innerwrap')[3];
+let innerwrap5 = document.getElementsByClassName('innerwrap')[4];
+let innerwrap6 = document.getElementsByClassName('innerwrap')[5];
+let innerwrap7 = document.getElementsByClassName('innerwrap')[6];
+let innerwrap8 = document.getElementsByClassName('innerwrap')[7];
+
+let followerNum = document.getElementsByClassName('followerNum')[0];
+let followerNum2 = document.getElementsByClassName('followerNum')[1];
+let followerNum3 = document.getElementsByClassName('followerNum')[2];
+let followerNum4 = document.getElementsByClassName('followerNum')[3];
+
+let statsNum = document.getElementsByClassName('statsNum')[0];
+let statsNum2 = document.getElementsByClassName('statsNum')[1];
+let statsNum3 = document.getElementsByClassName('statsNum')[2];
+let statsNum4 = document.getElementsByClassName('statsNum')[3];
+let statsNum5 = document.getElementsByClassName('statsNum')[4];
+let statsNum6 = document.getElementsByClassName('statsNum')[5];
+let statsNum7 = document.getElementsByClassName('statsNum')[6];
+let statsNum8 = document.getElementsByClassName('statsNum')[7];
+
+let name = document.getElementById('tag');
+let attribution = document.getElementById('attr');
+
+
+let slider = document.getElementById('sliderRound');
+
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+  header.classList.toggle('darkBlue');
+  headerh1.classList.toggle('white');
+  subtitle.classList.toggle('desatBlue');
+  mode.classList.toggle('desatBlue');
+
+  ovtitle.classList.toggle('white');
+
+  boxwrap.classList.toggle('darkDesatBlue');
+  boxwrap2.classList.toggle('darkDesatBlue');
+  boxwrap3.classList.toggle('darkDesatBlue');
+  boxwrap4.classList.toggle('darkDesatBlue');
+  innerwrap.classList.toggle('darkDesatBlue');
+  innerwrap2.classList.toggle('darkDesatBlue');
+  innerwrap3.classList.toggle('darkDesatBlue');
+  innerwrap4.classList.toggle('darkDesatBlue');
+  innerwrap5.classList.toggle('darkDesatBlue');
+  innerwrap6.classList.toggle('darkDesatBlue');
+  innerwrap7.classList.toggle('darkDesatBlue');
+  innerwrap8.classList.toggle('darkDesatBlue');
+
+  followerNum.classList.toggle('white');
+  followerNum2.classList.toggle('white');
+  followerNum3.classList.toggle('white');
+  followerNum4.classList.toggle('white');
+
+  statsNum.classList.toggle('white');
+  statsNum2.classList.toggle('white');
+  statsNum3.classList.toggle('white');
+  statsNum4.classList.toggle('white');
+  statsNum5.classList.toggle('white');
+  statsNum6.classList.toggle('white');
+  statsNum7.classList.toggle('white');
+  statsNum8.classList.toggle('white');
+
+  name.classList.toggle('desatBlue');
+  attribution.classList.toggle('blue');
+
+  slider.classList.toggle('sliderBG');
+
+  
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+
+</html>
