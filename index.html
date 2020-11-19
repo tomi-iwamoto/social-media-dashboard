@@ -333,7 +333,6 @@ let statsNum8 = document.getElementsByClassName('statsNum')[7];
 let name = document.getElementById('tag');
 let attribution = document.getElementById('attr');
 
-
 let slider = document.getElementById('sliderRound');
 
 chk.addEventListener('change', () => {
@@ -377,6 +376,11 @@ chk.addEventListener('change', () => {
 
   slider.classList.toggle('sliderBG');
 
+  if (mode.innerHTML === "Light Mode") {
+         mode.innerHTML = "Dark Mode";
+      } else {
+         mode.innerHTML = "Light Mode";
+      };
   
 });
 
