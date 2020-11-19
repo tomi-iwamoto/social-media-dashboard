@@ -188,6 +188,12 @@ h2 {
     padding-bottom: 30px;
 }
 
+.secondbox:hover {
+    background-color:hsl(227, 69%, 95%);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 #facebook-info {
     width:90%;
     display:flex;
@@ -717,6 +723,12 @@ h2 {
   justify-content: space-between;
   align-items: center;
   width:100%;
+}
+
+.innerwrap:hover {
+    background-color:hsl(227, 69%, 95%);
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 #fb-views {
