@@ -1,49 +1,48 @@
+
+/*--- light mode styles----*/
+
+:root {
+    --body-clr:white;
+    --header-clr:hsl(225, 100%, 98%);
+    --bg-clr:hsl(225, 100%, 98%);
+    --h1-clr:black;
+    --font-clr:hsl(228, 12%, 44%);
+    --font-white:hsl(228, 12%, 44%);
+    --bg-btn:hsl(230, 22%, 74%);
+    --slider-inner:white;
+    --hover-clr:hsl(227, 69%, 95%);
+    --uppercase-letters:hsl(229, 14%, 55%);
+
+    --background: var(--bg-clr);
+    --gradient:linear-gradient(90deg, rgba(55,143,230,1) 0%, rgba(62,218,130,1) 100%);
+}
+
+/*---dark mode styles------*/
+
+.darkmode {
+    --body-clr:hsl(232, 19%, 15%);
+    --header-clr:hsl(232, 19%, 15%);
+    --bg-clr:hsl(228, 28%, 20%);
+    --h1-clr:white;
+    --font-clr:#939fcd;
+    --font-white:white;
+    --bg-btn: linear-gradient(90deg, rgba(55,143,230,1) 0%, rgba(62,218,130,1) 100%);
+    --slider-inner:white;
+    --hover-clr:hsl(228deg 27% 27%);
+    --background: var(--bg-clr);
+    --footer-clr:rgba(55,143,230,1);
+}
+
+
+/*---regular mode styles---*/
+
 body {
     width:100%;
     height:100%;
     font-family: 'Inter', sans-serif;
     margin:0;
+    background-color:var(--body-clr);
 }
-
-/*---dark mode styles------*/
-
-.dark {
-    background-color:hsl(230, 17%, 14%);
-}
-
-.darkBlue {
-    background-color:hsl(232, 19%, 15%);
-}
-
-.darkDesatBlue {
-    background-color:hsl(228, 28%, 20%);
-}
-
-.desatBlue {
-    color:hsl(228, 34%, 66%);
-    color:#939fcd;
-}
-
-.white {
-    color:hsl(0, 0%, 100%);
-}
-
-.sliderBG {
-    background: linear-gradient(90deg, rgba(55,143,230,1) 0%, rgba(62,218,130,1) 100%);
-}
-
-.blue {
-    color:#1da1f2;
-}
-
-.darkhover {
-  background-color: #535e8a;
-}
-
-
-
-/*---regular mode styles---*/
-
 
 .wrapper {
     display:flex;
@@ -77,7 +76,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: var(--bg-btn);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -89,17 +88,18 @@ body {
     width: 20px;
     left: 5px;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--slider-inner);
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: hsl(230, 22%, 74%);
+    /* background-color: var(--bg-btn); did not work*/
+    background-image: var(--gradient);
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px  hsl(230, 22%, 74%);
+    box-shadow: 0 0 1px  var(--bg-btn);
   }
   
   input:checked + .slider:before {
@@ -126,7 +126,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color: var(--header-clr);
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
     position: absolute;
@@ -146,13 +146,14 @@ header .text {
 header .text h1 {
     font-size: 26px;
     text-align: left;
+    color:var(--h1-clr);
 }
 
 h4 {
     font-size: 18px;
     text-align: left;
     margin:0 0 30px 0;
-    color:hsl(228, 12%, 44%);
+    color:var(--font-clr);
 }
 
 .mode {
@@ -165,11 +166,11 @@ h4 {
 }
 
 h2 {
-    color:hsl(228, 12%, 44%);
+    color:var(--font-clr);
     font-size: 19px;
 }
 .divider {
-    border:hsl(230, 22%, 74%) 1px solid;
+    border:var(--bg-btn) 1px solid;
     width:100%;
 }
 
@@ -193,11 +194,6 @@ h2 {
     padding-bottom: 30px;
 }
 
-.secondbox:hover {
-    background-color:hsl(227, 69%, 95%);
-    cursor: pointer;
-    border-radius: 5px;
-}
 
 #facebook-info {
     width:90%;
@@ -205,7 +201,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color: var(--background);
     border-radius:5px;
     border-top:6px hsl(208, 92%, 53%) solid;
 }
@@ -216,7 +212,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color: var(--background);
     border-radius:5px;
     border-top:6px hsl(203, 89%, 53%) solid;
 }
@@ -227,7 +223,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color: var(--background);
     border-radius:5px;
 }
 
@@ -245,7 +241,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color: var(--background);
     border-radius:5px;
     border-top:6px hsl(348, 97%, 39%) solid;
 }
@@ -259,15 +255,12 @@ h2 {
     /* padding-bottom: 30px; */
 }
 
-.box-wrap:hover {
-    
-}
-
 .box-wrap h1 {
     font-size: 60px;
     font-weight: 700;
     margin-top:20px;
     margin-bottom: 0;
+    color:var(--font-white);
 }
 
 .uppercase {
@@ -275,13 +268,13 @@ h2 {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color:hsl(229, 14%, 55%);
+    color:var(--uppercase-letters);
 }
 
 .name {
     margin-bottom: 0;
     font-weight: 700;
-    color:hsl(228, 12%, 44%);
+    color:var(--font-clr);
     text-transform: none;
     margin-top:0;
 }
@@ -336,7 +329,7 @@ h2 {
 }
 
 h3 {
-    color: hsl(228, 12%, 44%);
+    color: var(--font-white);
     font-size: 24px;
 }
 
@@ -376,20 +369,21 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color: var(--background);
     border-radius:10px;
     /* padding-top: 20px; */
     /* margin-top:30px; */
 }
 
 #fb-views p {
-    color: rgb(99, 104, 126);
+    color: var(--font-clr);
     font-weight: 700;
 }
 
 .stats-wrap h4 {
     font-size: 40px;
     margin:30px 0;
+    color:var(--font-white);
 }
 
 .percent-wrap {
@@ -419,14 +413,14 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color: var(--background);
     border-radius:10px;
     /* padding-top: 20px; */
     margin-top:30px;
 }
 
 #fb-likes p {
-    color: rgb(99, 104, 126);
+    color:var(--font-clr);
     font-weight: 700;
 }
 
@@ -444,14 +438,14 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color:var(--background);
     border-radius:10px;
     /* padding-top: 20px; */
     margin-top:30px;
 }
 
 #inst-likes p {
-    color: rgb(99, 104, 126);
+    color:var(--font-clr);
     font-weight: 700;
 }
 
@@ -469,14 +463,14 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color:var(--background);
     border-radius:10px;
     /* padding-top: 20px; */
     margin-top:30px;
 }
 
 #inst-views p {
-    color: rgb(99, 104, 126);
+    color: var(--font-clr);
     font-weight: 700;
 }
 
@@ -493,14 +487,14 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color: var(--background);
     border-radius:10px;
     /* padding-top: 20px; */
     margin-top:30px;
 }
 
 #tw-retweets p {
-    color: rgb(99, 104, 126);
+    color: var(--font-clr);
     font-weight: 700;
 }
 
@@ -517,14 +511,14 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color:var(--background);
     border-radius:10px;
     /* padding-top: 20px; */
     margin-top:30px;
 }
 
 #tw-likes p {
-    color: rgb(99, 104, 126);
+    color:var(--font-clr);
     font-weight: 700;
 }
 
@@ -542,14 +536,14 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color: var(--background);
     border-radius:10px;
     /* padding-top: 20px; */
     margin-top:30px;
 }
 
 #yt-likes p {
-    color: rgb(99, 104, 126);
+    color:var(--font-clr);
     font-weight: 700;
 }
 
@@ -566,14 +560,14 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color: var(--background);
     border-radius:10px;
     /* padding-top: 20px; */
     margin-top:30px;
 }
 
 #yt-views p {
-    color: rgb(99, 104, 126);
+    color: var(--font-clr);
     font-weight: 700;
 }
 
@@ -597,7 +591,9 @@ footer {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-
+#attr {
+    color:var(--footer-clr);
+}
 
 /*----TABLET STYLES----------------------------------------*/
 @media only screen and (min-width: 768px){
@@ -736,7 +732,7 @@ h2 {
 }
 
 .innerwrap:hover {
-    background-color:hsl(227, 69%, 95%);
+    background-color:var(--hover-clr);
     cursor: pointer;
     border-radius: 5px;
 }
@@ -766,6 +762,11 @@ h2 {
     width:22%;
 }
 
+.secondbox:hover {
+    background-color:var(--hover-clr);
+    cursor: pointer;
+    border-radius: 5px;
+}
 
 }
 
