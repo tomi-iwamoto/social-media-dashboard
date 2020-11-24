@@ -1,4 +1,6 @@
 let darkmode = localStorage.getItem('darkmode');
+let mode = document.getElementById('mode');
+
 
 const darkmodeToggle = document.getElementById('chk');
 
@@ -21,7 +23,14 @@ darkmodeToggle.addEventListener('click', ()=> {
 
   if(darkmode !== 'enabled'){
     enableDarkmode();
+    mode.innerHTML = 'Light Mode';
   } else {
     disableDarkmode();
+    mode.innerHTML = 'Dark Mode';
   }
+
+
+
 });
+
+
