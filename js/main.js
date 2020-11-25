@@ -7,14 +7,14 @@ const darkmodeToggle = document.getElementById('chk');
 const enableDarkmode = () => {
   document.body.classList.add('darkmode');
   localStorage.setItem('darkmode', 'enabled');
-  mode.innerHTML = 'Light Mode';
+  // mode.innerHTML = 'Light Mode';
 
 }
 
 const disableDarkmode = () => {
   document.body.classList.remove('darkmode');
   localStorage.setItem('darkmode', null);
-  mode.innerHTML = 'Dark Mode';
+  // mode.innerHTML = 'Dark Mode';
 
 }
 
