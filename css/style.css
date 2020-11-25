@@ -25,8 +25,8 @@
     --h1-clr:white;
     --font-clr:#939fcd;
     --font-white:white;
-    /* --bg-btn:linear-gradient(90deg, rgba(55,143,230,1) , rgba(62,218,130,1)); */
-    --bg-btn:#1eb589;
+    --bg-btn:linear-gradient(90deg, rgba(55,143,230,1) , rgba(62,218,130,1));
+    /* --bg-btn:#1eb589; */
     --slider-inner:white;
     --hover-clr:hsl(228deg 27% 27%);
     --background: var(--bg-clr);
