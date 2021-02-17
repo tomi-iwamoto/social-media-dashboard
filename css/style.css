@@ -25,7 +25,6 @@
     --h1-clr:white;
     --font-clr:#939fcd;
     --font-white:white;
-    /* --bg-btn:linear-gradient(90deg, rgba(55,143,230,1) , rgba(62,218,130,1)); */
     --bg-btn:#1eb589;
     --slider-inner:white;
     --hover-clr:hsl(228deg 27% 27%);
@@ -51,7 +50,6 @@ body {
     align-items: center;
     width: 100%;
     position: relative;
-    /* min-height: 100vh; */
 }
 
 /* toggle button */
@@ -251,7 +249,6 @@ h2 {
 
 .box-wrap {
     margin-bottom: 30px;
-    /* padding-bottom: 30px; */
 }
 
 .box-wrap h1 {
@@ -316,7 +313,8 @@ h2 {
     width:100%;
     position: absolute;
     top:1400px;
-    padding-bottom: 55px; /*ADDED THIS SIZE PADDING SO THAT THE FOOTER CAN FIT INTO IT WITH THE POSITION STATEMENT*/
+    /*ADDED THIS SIZE PADDING SO THAT THE FOOTER CAN FIT INTO IT WITH THE POSITION STATEMENT*/
+    padding-bottom: 55px; 
 }
 
 .overview-wrapper .text-wrap {
@@ -370,8 +368,6 @@ h3 {
     align-items: center;
     background-color: var(--background);
     border-radius:10px;
-    /* padding-top: 20px; */
-    /* margin-top:30px; */
 }
 
 #fb-views p {
@@ -414,7 +410,6 @@ h3 {
     align-items: center;
     background-color: var(--background);
     border-radius:10px;
-    /* padding-top: 20px; */
     margin-top:30px;
 }
 
@@ -439,7 +434,6 @@ h3 {
     align-items: center;
     background-color:var(--background);
     border-radius:10px;
-    /* padding-top: 20px; */
     margin-top:30px;
 }
 
@@ -464,7 +458,6 @@ h3 {
     align-items: center;
     background-color:var(--background);
     border-radius:10px;
-    /* padding-top: 20px; */
     margin-top:30px;
 }
 
@@ -488,7 +481,6 @@ h3 {
     align-items: center;
     background-color: var(--background);
     border-radius:10px;
-    /* padding-top: 20px; */
     margin-top:30px;
 }
 
@@ -512,7 +504,6 @@ h3 {
     align-items: center;
     background-color:var(--background);
     border-radius:10px;
-    /* padding-top: 20px; */
     margin-top:30px;
 }
 
@@ -537,7 +528,6 @@ h3 {
     align-items: center;
     background-color: var(--background);
     border-radius:10px;
-    /* padding-top: 20px; */
     margin-top:30px;
 }
 
@@ -561,7 +551,6 @@ h3 {
     align-items: center;
     background-color: var(--background);
     border-radius:10px;
-    /* padding-top: 20px; */
     margin-top:30px;
 }
 
@@ -583,7 +572,8 @@ footer {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom:0; /* SO THAT THE FOOTER STAYS AT THE BOTTOM AND ADDED PADDING OF THE SAME SIZE TO OVERIVEW SECTION THAT THE FOOTER IS IN*/
+    /* SO THAT THE FOOTER STAYS AT THE BOTTOM AND ADDED PADDING OF THE SAME SIZE TO OVERIVEW SECTION THAT THE FOOTER IS IN*/
+    bottom:0; 
     height:50px;
 }
 

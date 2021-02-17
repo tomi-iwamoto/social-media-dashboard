@@ -16,283 +16,291 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- font styles end -->
-
-
 </head>
 
 
-
+<!--------------HEADER--------------------->
 
 <body id="bodybackground">
-
   <div class="wrapper">
 
-
     <header>
-
       <div id="header-wrap">
-      <div class="text">
-        <h1 id='title'>Social Media Dashboard</h1>
-        <h4 id="sub">Total Followers: 23,004</h4>
+        <div class="text">
+          <h1 id='title'>Social Media Dashboard</h1>
+          <h4 id="sub">Total Followers: 23,004</h4>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="mode">
+          <h2 id="mode">Dark Mode</h2>
+
+          <!----DARM / LIGHT MODE SWITCH-->
+          <label class="switch" id="slider-switch">
+            <input type="checkbox" checked id="chk">
+            <span id="sliderRound" class="slider round" class="sliderBG"></span>
+          </label>
+        </div>
       </div>
-
-      <div class="divider"></div>
-
-      <div class="mode">
-        <h2 id="mode">Dark Mode</h2>
-
-        <label class="switch" id="slider-switch"> 
-          <input type="checkbox" checked id="chk">
-          <span id="sliderRound" class="slider round" class="sliderBG"></span>
-        </label>
-
-      </div>
-    </div>
-
-
     </header>
 
 
+    <!--------------FOLLOWERS SECTION--------------------->
 
-    <div class="followers-wrapper"> <!-----followers section-->
 
+    <div class="followers-wrapper">
+      <!----FB INFO ----->
       <div class="box-wrap" id="facebook-info">
         <div class="secondbox">
-        <div class="socmed-wrapper">
-          <img src="img/icon-facebook.svg" alt="faceboook icon">
-          <p id="tag" class="name">@nathanf</p>
+          <div class="socmed-wrapper">
+            <img src="img/icon-facebook.svg" alt="faceboook icon">
+            <p id="tag" class="name">@nathanf</p>
+          </div>
+          <h1 class="followerNum">1987</h1>
+          <p class="uppercase">followers</p>
+          <div class="counter-wrapper">
+            <img src="img/icon-up.svg" alt="uparrow">
+            <p>12 Today</p>
+          </div>
         </div>
-        <h1 class="followerNum">1987</h1>
-        <p class="uppercase">followers</p>
-        <div class="counter-wrapper">
-          <img src="img/icon-up.svg" alt="uparrow">
-          <p>12 Today</p>
-        </div>
-      </div>
       </div>
 
+      <!----TWITTER INFO ----->
 
       <div class="box-wrap" id="twitter-info">
         <div class="secondbox">
-        <div class="socmed-wrapper">
-          <img src="img/icon-twitter.svg" alt="twitter icon">
-          <p class="name">@nathanf</p>
-        </div>
-        <h1  class="followerNum">1044</h1>
-        <p class="uppercase">followers</p>
-        <div class="counter-wrapper">
-          <img src="img/icon-up.svg" alt="uparrow">
-          <p>99 Today</p>
+          <div class="socmed-wrapper">
+            <img src="img/icon-twitter.svg" alt="twitter icon">
+            <p class="name">@nathanf</p>
+          </div>
+          <h1 class="followerNum">1044</h1>
+          <p class="uppercase">followers</p>
+          <div class="counter-wrapper">
+            <img src="img/icon-up.svg" alt="uparrow">
+            <p>99 Today</p>
+          </div>
         </div>
       </div>
-      </div>
+
+      <!----INSTAGRAM INFO ----->
 
       <div class="box-wrap" id="instagram-info">
         <div id="inst-border"></div>
         <div class="secondbox">
-        <div class="socmed-wrapper">
-          <img src="img/icon-instagram.svg" alt="instagram icon">
-          <p class="name">@nathanf</p>
-        </div>
-        <h1 class="followerNum">11K</h1>
-        <p class="uppercase">followers</p>
-        <div class="counter-wrapper">
-          <img src="img/icon-up.svg" alt="uparrow">
-          <p>1099 Today</p>
-        </div>
+          <div class="socmed-wrapper">
+            <img src="img/icon-instagram.svg" alt="instagram icon">
+            <p class="name">@nathanf</p>
+          </div>
+          <h1 class="followerNum">11K</h1>
+          <p class="uppercase">followers</p>
+          <div class="counter-wrapper">
+            <img src="img/icon-up.svg" alt="uparrow">
+            <p>1099 Today</p>
+          </div>
         </div>
       </div>
+
+
+      <!----YOUTUBE INFO ----->
 
 
       <div class="box-wrap" id="youtube-info">
         <div class="secondbox">
-        <div class="socmed-wrapper">
-          <img src="img/icon-youtube.svg" alt="youtube icon">
-          <p class="name">@nathanf</p>
-        </div>
-        <h1 class="followerNum">8239</h1>
-        <p class="uppercase">followers</p>
-        <div class="counter-wrapper">
-          <img src="img/icon-down.svg" alt="downarrow">
-          <p id="ytube-p">144 Today</p>
-        </div>
+          <div class="socmed-wrapper">
+            <img src="img/icon-youtube.svg" alt="youtube icon">
+            <p class="name">@nathanf</p>
+          </div>
+          <h1 class="followerNum">8239</h1>
+          <p class="uppercase">followers</p>
+          <div class="counter-wrapper">
+            <img src="img/icon-down.svg" alt="downarrow">
+            <p id="ytube-p">144 Today</p>
+          </div>
         </div>
       </div>
-
     </div>
 
-    <div class="overview-wrapper"> <!-----overview section-->
 
+
+    <!--------------------------OVERVIEW SECTION ----------------------------->
+
+
+    <div class="overview-wrapper">
       <div class="text-wrap">
-      <h3 id="overviewTitle">Overiew - Today</h3>
+        <h3 id="overviewTitle">Overiew - Today</h3>
+      </div>
+      <div class="likes-wrapper">
+        <!---likes half wrapper-->
+        <div class="likes-half-wrapper">
+          <!-------FB VIEWS---------->
+          <div class="views-wrap" id="fb-views">
+            <div class="innerwrap">
+              <div class="stats-wrap">
+                <p class="lightGray">Page Views</p>
+                <img src="img/icon-facebook.svg" alt="fb icon" />
+              </div>
+              <div class="stats-wrap">
+                <h4 class="statsNum">87</h4>
+                <div class="percent-wrap">
+                  <img src="img/icon-up.svg" alt="up arrow" />
+                  <p>3%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-------FB LIKES---------->
+
+          <div class="views-wrap" id="fb-likes">
+            <div class="innerwrap">
+              <div class="stats-wrap">
+                <p class="lightGray">Likes</p>
+                <img src="img/icon-facebook.svg" alt="fb icon" />
+              </div>
+              <div class="stats-wrap">
+                <h4 class="statsNum">52</h4>
+                <div class="percent-wrap">
+                  <img src="img/icon-down.svg" alt="down arrow" />
+                  <p class="red">2%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-------INSTAGRAM LIKES---------->
+
+          <div class="views-wrap" id="inst-likes">
+            <div class="innerwrap">
+              <div class="stats-wrap">
+                <p class="lightGray">Likes</p>
+                <img src="img/icon-instagram.svg" alt="instagram icon" />
+              </div>
+              <div class="stats-wrap">
+                <h4 class="statsNum">5462</h4>
+                <div class="percent-wrap">
+                  <img src="img/icon-up.svg" alt="up arrow" />
+                  <p>2257%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-------INSTAGRAM VIEWS---------->
+
+          <div class="views-wrap" id="inst-views">
+            <div class="innerwrap">
+              <div class="stats-wrap">
+                <p class="lightGray">Profile Views</p>
+                <img src="img/icon-instagram.svg" alt="instagram icon" />
+              </div>
+              <div class="stats-wrap">
+                <h4 class="statsNum">52k</h4>
+                <div class="percent-wrap">
+                  <img src="img/icon-up.svg" alt="up arrow" />
+                  <p>1375%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!----likes half wrap end-->
+
+        <div class="likes-half-wrapper">
+          <!----likes half wrap2-->
+          <!----TWITTER RETWEETS---->
+          <div class="views-wrap" id="tw-retweets">
+            <div class="innerwrap">
+              <div class="stats-wrap">
+                <p class="lightGray">Retweets</p>
+                <img src="img/icon-twitter.svg" alt="twitter icon" />
+              </div>
+              <div class="stats-wrap">
+                <h4 class="statsNum">117</h4>
+                <div class="percent-wrap">
+                  <img src="img/icon-up.svg" alt="up arrow" />
+                  <p>303%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-------TWITTER LIKES---------->
+
+          <div class="views-wrap" id="tw-likes">
+            <div class="innerwrap">
+              <div class="stats-wrap">
+                <p class="lightGray">Likes</p>
+                <img src="img/icon-twitter.svg" alt="twitter icon" />
+              </div>
+              <div class="stats-wrap">
+                <h4 class="statsNum">507</h4>
+                <div class="percent-wrap">
+                  <img src="img/icon-up.svg" alt="up arrow" />
+                  <p>553%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-------YOUTUBE LIKES---------->
+
+          <div class="views-wrap" id="yt-likes">
+            <div class="innerwrap">
+              <div class="stats-wrap">
+                <p class="lightGray">Likes</p>
+                <img src="img/icon-youtube.svg" alt="youtube icon" />
+              </div>
+              <div class="stats-wrap">
+                <h4 class="statsNum">107</h4>
+                <div class="percent-wrap">
+                  <img src="img/icon-down.svg" alt="down arrow" />
+                  <p class="red">19%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-------YOUTUBE VIEWS---------->
+
+
+          <div class="views-wrap" id="yt-views">
+            <div class="innerwrap">
+              <div class="stats-wrap">
+                <p class="lightGray">Total Views</p>
+                <img src="img/icon-youtube.svg" alt="youtube icon" />
+              </div>
+              <div class="stats-wrap">
+                <h4 class="statsNum">1407</h4>
+                <div class="percent-wrap">
+                  <img src="img/icon-down.svg" alt="down arrow" />
+                  <p class="red">12%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!----likes half wrap2 end-->
       </div>
 
-      <div class="likes-wrapper"> 
 
-
-        <div class="likes-half-wrapper"><!---likes half wrapper-->
-
-        <div class="views-wrap" id="fb-views">
-          <div class="innerwrap">
-          <div class="stats-wrap">
-          <p class="lightGray">Page Views</p>
-          <img src="img/icon-facebook.svg" alt="fb icon" />
-          </div>
-          <div class="stats-wrap">
-          <h4 class="statsNum">87</h4>
-          <div class="percent-wrap">
-            <img src="img/icon-up.svg" alt="up arrow"/>
-            <p>3%</p>
-          </div>
-          </div>
-        </div>
-        </div>
-
-
-        <div class="views-wrap" id="fb-likes">
-          <div class="innerwrap">
-          <div class="stats-wrap">
-            <p class="lightGray">Likes</p>
-            <img src="img/icon-facebook.svg" alt="fb icon" />
-            </div>
-            <div class="stats-wrap">
-            <h4 class="statsNum">52</h4>
-            <div class="percent-wrap">
-              <img src="img/icon-down.svg" alt="down arrow"/>
-              <p class="red">2%</p>
-            </div>
-            </div>
-            </div>
-        </div>
-
-
-
-        <div class="views-wrap" id="inst-likes">
-          <div class="innerwrap">
-          <div class="stats-wrap">
-            <p class="lightGray">Likes</p>
-            <img src="img/icon-instagram.svg" alt="instagram icon" />
-            </div>
-            <div class="stats-wrap">
-            <h4 class="statsNum">5462</h4>
-            <div class="percent-wrap">
-              <img src="img/icon-up.svg" alt="up arrow"/>
-              <p>2257%</p>
-            </div>
-            </div>
-            </div>
-        </div>
-
-
-        <div class="views-wrap" id="inst-views">
-          <div class="innerwrap">
-          <div class="stats-wrap">
-            <p class="lightGray">Profile Views</p>
-            <img src="img/icon-instagram.svg" alt="instagram icon" />
-            </div>
-            <div class="stats-wrap">
-            <h4 class="statsNum">52k</h4>
-            <div class="percent-wrap">
-              <img src="img/icon-up.svg" alt="up arrow"/>
-              <p>1375%</p>
-            </div>
-            </div>
-            </div>
-        </div>
-
-      </div><!----likes half wrap end-->
-
-      <div class="likes-half-wrapper"><!----likes half wrap2-->
-
-        <div class="views-wrap" id="tw-retweets">
-          <div class="innerwrap">
-          <div class="stats-wrap">
-            <p class="lightGray">Retweets</p>
-            <img src="img/icon-twitter.svg" alt="twitter icon" />
-            </div>
-            <div class="stats-wrap">
-            <h4 class="statsNum">117</h4>
-            <div class="percent-wrap">
-              <img src="img/icon-up.svg" alt="up arrow"/>
-              <p>303%</p>
-            </div>
-            </div>
-            </div>
-        </div>
-
-
-        <div class="views-wrap" id="tw-likes">
-          <div class="innerwrap">
-          <div class="stats-wrap">
-            <p class="lightGray">Likes</p>
-            <img src="img/icon-twitter.svg" alt="twitter icon" />
-            </div>
-            <div class="stats-wrap">
-            <h4 class="statsNum">507</h4>
-            <div class="percent-wrap">
-              <img src="img/icon-up.svg" alt="up arrow"/>
-              <p>553%</p>
-            </div>
-            </div>
-            </div>
-        </div>
-
-
-        <div class="views-wrap" id="yt-likes">
-          <div class="innerwrap">
-          <div class="stats-wrap">
-            <p class="lightGray">Likes</p>
-            <img src="img/icon-youtube.svg" alt="youtube icon" />
-            </div>
-            <div class="stats-wrap">
-            <h4 class="statsNum">107</h4>
-            <div class="percent-wrap">
-              <img src="img/icon-down.svg" alt="down arrow"/>
-              <p class="red">19%</p>
-            </div>
-            </div>
-            </div>
-        </div>
-
-
-        <div class="views-wrap" id="yt-views">
-          <div class="innerwrap">
-          <div class="stats-wrap">
-            <p class="lightGray">Total Views</p>
-            <img src="img/icon-youtube.svg" alt="youtube icon" />
-            </div>
-            <div class="stats-wrap">
-            <h4 class="statsNum">1407</h4>
-            <div class="percent-wrap">
-              <img src="img/icon-down.svg" alt="down arrow"/>
-              <p class="red">12%</p>
-            </div>
-            </div>
-          </div>
-        </div>
-
-      </div>   <!----likes half wrap2 end-->
-
-      </div>
+      <!-------FOOTER---------->
 
       <footer>
-
         <div class="attribution">
-          <p id="attr">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-          Coded by <a href="https://tomii.design/" target="_blank">Tomomi Iwamoto</a>.</p>
+          <p id="attr">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+              Mentor</a>.
+            Coded by <a href="https://tomii.design/" target="_blank">Tomomi Iwamoto</a>.</p>
         </div>
       </footer>
     </div>
-
-  
-
-  </div> <!---wrapper-->
-
-<!----------JAVASCRIPT-------------------------------->
-<script src="js/main.js" async></script>
+  </div>
 
 
+
+  <script src="js/main.js" async></script>
 </body>
 
 </html>
